@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbestacionservicioefwebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EstacionServicio">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CapacidadMaxima" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comuna" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Calle" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PuntoCarga">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CapacidadMaxima" Type="Int32" Nullable="false" />
+    <Property Name="FechaVencimiento" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="dbestacionservicioefwebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EstacionServicio" EntityType="Self.EstacionServicio" />
+    <EntitySet Name="PuntoCarga" EntityType="Self.PuntoCarga" />
+  </EntityContainer>
+</Schema>

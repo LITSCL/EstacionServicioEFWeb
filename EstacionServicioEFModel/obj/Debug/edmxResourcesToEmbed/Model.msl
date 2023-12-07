@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbestacionservicioefwebModelStoreContainer" CdmEntityContainer="dbestacionservicioefwebEntities">
+    <EntitySetMapping Name="EstacionServicio">
+      <EntityTypeMapping TypeName="dbestacionservicioefwebModel.EstacionServicio">
+        <MappingFragment StoreEntitySet="EstacionServicio">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapacidadMaxima" ColumnName="CapacidadMaxima" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Comuna" ColumnName="Comuna" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PuntoCarga">
+      <EntityTypeMapping TypeName="dbestacionservicioefwebModel.PuntoCarga">
+        <MappingFragment StoreEntitySet="PuntoCarga">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapacidadMaxima" ColumnName="CapacidadMaxima" />
+          <ScalarProperty Name="FechaVencimiento" ColumnName="FechaVencimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
